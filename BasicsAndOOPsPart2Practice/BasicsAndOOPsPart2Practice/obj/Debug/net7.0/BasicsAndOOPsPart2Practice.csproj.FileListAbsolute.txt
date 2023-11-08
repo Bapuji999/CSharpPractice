@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\bin\Debug\net7.0\BasicsAndOOPsPart2Practice.exe
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\bin\Debug\net7.0\BasicsAndOOPsPart2Practice.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\bin\Debug\net7.0\BasicsAndOOPsPart2Practice.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\bin\Debug\net7.0\BasicsAndOOPsPart2Practice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\bin\Debug\net7.0\BasicsAndOOPsPart2Practice.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\refint\BasicsAndOOPsPart2Practice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\BasicsAndOOPsPart2Practice.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\BasicsAndOOPsPart2Practice\BasicsAndOOPsPart2Practice\obj\Debug\net7.0\ref\BasicsAndOOPsPart2Practice.dll

@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\bin\Debug\net7.0\C#BasicOops2.exe
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\bin\Debug\net7.0\C#BasicOops2.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\bin\Debug\net7.0\C#BasicOops2.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\bin\Debug\net7.0\C#BasicOops2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\bin\Debug\net7.0\C#BasicOops2.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\refint\C#BasicOops2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\C#BasicOops2.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\C#BasicOops2\C#BasicOops2\obj\Debug\net7.0\ref\C#BasicOops2.dll

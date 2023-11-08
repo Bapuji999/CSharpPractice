@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\bin\Debug\net7.0\DelegatesPractice.exe
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\bin\Debug\net7.0\DelegatesPractice.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\bin\Debug\net7.0\DelegatesPractice.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\bin\Debug\net7.0\DelegatesPractice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\bin\Debug\net7.0\DelegatesPractice.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\refint\DelegatesPractice.dll
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\DelegatesPractice.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\DelegatesPractice\DelegatesPractice\obj\Debug\net7.0\ref\DelegatesPractice.dll

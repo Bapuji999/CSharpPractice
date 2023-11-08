@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\bin\Debug\net7.0\Practice2.exe
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\bin\Debug\net7.0\Practice2.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\bin\Debug\net7.0\Practice2.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\bin\Debug\net7.0\Practice2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\bin\Debug\net7.0\Practice2.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\refint\Practice2.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\Practice2.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Practice2\Practice2\obj\Debug\net7.0\ref\Practice2.dll
