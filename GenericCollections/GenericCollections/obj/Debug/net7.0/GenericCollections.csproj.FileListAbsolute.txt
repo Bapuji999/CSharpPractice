@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\bin\Debug\net7.0\GenericCollections.exe
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\bin\Debug\net7.0\GenericCollections.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\bin\Debug\net7.0\GenericCollections.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\bin\Debug\net7.0\GenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\bin\Debug\net7.0\GenericCollections.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\refint\GenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\GenericCollections.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\GenericCollections\GenericCollections\obj\Debug\net7.0\ref\GenericCollections.dll
