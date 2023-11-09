@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\bin\Debug\net7.0\NonGenericCollections.exe
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\bin\Debug\net7.0\NonGenericCollections.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\bin\Debug\net7.0\NonGenericCollections.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\bin\Debug\net7.0\NonGenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\bin\Debug\net7.0\NonGenericCollections.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\refint\NonGenericCollections.dll
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\NonGenericCollections.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\NonGenericCollections\NonGenericCollections\obj\Debug\net7.0\ref\NonGenericCollections.dll
