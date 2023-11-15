@@ -1,4 +1,6 @@
-﻿namespace GenericCollections
+﻿using System.Collections.ObjectModel;
+
+namespace GenericCollections
 {
     class DictionaryPractice
     {
@@ -23,6 +25,20 @@
             //Remove
             froot.Remove(1);
             Console.WriteLine(string.Join(",", froot));
+
+            //ReadOnlyDictionary
+            ReadOnlyDictionary<int, string> abc = froot.AsReadOnly();
+
+            Dictionary<int, List<int>> asd = new Dictionary<int, List<int>>();
+            asd.Add(1, new List<int>() { 1,23,4 });
+            asd.Add(2, new List<int>() { 2, 23, 4 });
+            foreach (int key in asd.Keys)
+            {
+                foreach(int value in asd[key])
+                {
+                    Console.WriteLine($"[{key}, {value}]");
+                }
+            }
         }
     }
 }

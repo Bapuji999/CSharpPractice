@@ -4,7 +4,9 @@ namespace DelegatesPractice
 {
     class LamdaExpressionExample
     {
-        Func<int, int, int> add = (x, y) => x + y; //Statement Lamdas
+        Func<int> add = () => 10; //Statement Lamdas
+
+        Action action = () => Console.WriteLine("hi");
 
         public Func<int, int, int> sub = static (x, y) => x - y; //Static Anonymous Function
 
@@ -15,7 +17,24 @@ namespace DelegatesPractice
         };
         public void Example()
         {
-            add(5, 6);
+            List<int> a = new List<int>();
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            a.Add(10);
+            Console.WriteLine(a.Capacity);
+            action();
             customFunction(5, 6);
         }
     }

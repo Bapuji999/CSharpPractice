@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\bin\Debug\net7.0\Project1StudentManagment.exe
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\bin\Debug\net7.0\Project1StudentManagment.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\bin\Debug\net7.0\Project1StudentManagment.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\bin\Debug\net7.0\Project1StudentManagment.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\bin\Debug\net7.0\Project1StudentManagment.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\refint\Project1StudentManagment.dll
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\Project1StudentManagment.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\Project1StudentManagment\Project1StudentManagment\obj\Debug\net7.0\ref\Project1StudentManagment.dll

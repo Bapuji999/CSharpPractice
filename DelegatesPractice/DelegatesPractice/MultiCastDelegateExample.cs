@@ -5,7 +5,7 @@
         delegate void Calculation(int x, int y);
         private void Add(int x, int y)
         {
-            Console.WriteLine($"Add function called addition result is {x+y}.");
+            Console.WriteLine($"Add function called addition result is {x + y}.");
         }
         private void Mul(int x, int y)
         {

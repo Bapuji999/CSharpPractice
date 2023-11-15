@@ -9,7 +9,7 @@
         delegate void Calculation(int x, int y);
         public void Calculate(int x, int y)
         {
-            Calculation cal = static delegate (int x, int y) //Static Anonymous Function
+            Calculation cal =  delegate (int x, int y) //Static Anonymous Function
             {
                 Console.WriteLine($"Add function called addition result is {x + y}.");
             };
