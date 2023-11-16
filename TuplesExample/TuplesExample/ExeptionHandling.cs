@@ -18,7 +18,7 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(new IndexOutOfRangeException("not ok", new Exception()));
             }
             finally
             {

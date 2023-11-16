@@ -10,14 +10,14 @@ namespace Multi_Threading
             await taskBasedAsynchronousProgramming.Example1();
             Console.WriteLine("Hi");
             Console.WriteLine("Hi");
-            List<int> numbers = Enumerable.Range(1, 5).ToList();
 
-            Func<Task> ab = async () =>
+             Func<Task> ab = async () =>
             {
                 Console.WriteLine("Async function started.");
-                await Task.Delay(2000);
+                await taskBasedAsynchronousProgramming.Example1();
                 Console.WriteLine("Async function completed.");
             };
+            await ab();
         }
         public Task<string> Example1()
         {

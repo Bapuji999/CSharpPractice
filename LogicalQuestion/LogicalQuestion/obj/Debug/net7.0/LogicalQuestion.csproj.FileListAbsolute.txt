@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\bin\Debug\net7.0\LogicalQuestion.exe
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\bin\Debug\net7.0\LogicalQuestion.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\bin\Debug\net7.0\LogicalQuestion.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\bin\Debug\net7.0\LogicalQuestion.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\bin\Debug\net7.0\LogicalQuestion.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\refint\LogicalQuestion.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\LogicalQuestion.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LogicalQuestion\LogicalQuestion\obj\Debug\net7.0\ref\LogicalQuestion.dll

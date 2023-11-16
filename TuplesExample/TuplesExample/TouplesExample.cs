@@ -7,6 +7,12 @@ namespace TuplesExample
     {
         public static void Example()
         {
+            Tuple<int, string, bool> myTuple1 = Tuple.Create(1, "Hello", true);
+            Tuple<int, string, bool> myTuple2 = new Tuple<int, string, bool>(1, "Hello", true);
+            var myTuple = (1, "Hello", true);
+            var namedTuple = (Id: 1, Name: "John", IsStudent: true);
+            (int Id, string Name, bool IsStudent) namedTuple1 = (1, "John", true);
+
             Tuple<int, string, int, string> touple1 = new Tuple<int, string, int, string>(1,"hi", 2, "He");
 
             //Accessing Tuple Elements
