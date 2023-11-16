@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections;
+using System.Collections.ObjectModel;
 
 namespace GenericCollections
 {
@@ -39,6 +40,11 @@ namespace GenericCollections
                     Console.WriteLine($"[{key}, {value}]");
                 }
             }
+
+            //foreach( entry in abc)
+            //{
+            //    Console.WriteLine(entry);
+            //}
         }
     }
 }

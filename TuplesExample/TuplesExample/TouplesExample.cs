@@ -37,6 +37,8 @@ namespace TuplesExample
 
             TouplesExample touplesExample = new TouplesExample();
             Console.WriteLine(touplesExample.DoubleThem((2, 3, 4)));
+            Func<(int, int, int), int> total = ns => (ns.Item1 + ns.Item2 + ns.Item3);
+            Console.WriteLine(total((1, 6, 13)));
         }
         //ToupleMethod
         public static (int, string) Ok((int, string) v) //Tuple as Method Parameters
@@ -45,5 +47,6 @@ namespace TuplesExample
         }
 
         Func<(int, int, int), (int, int, int)> DoubleThem = ns => (2 * ns.Item1, 2 * ns.Item2, 2 * ns.Item3);
+        Func<(int, int, int), int> total = ns => (ns.Item1+ns.Item2+ns.Item3);
     }
 }

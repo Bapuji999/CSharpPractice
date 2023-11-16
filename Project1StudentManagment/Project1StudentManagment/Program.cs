@@ -1,6 +1,8 @@
-﻿namespace Project1StudentManagment
+﻿using System.Collections.Generic;
+
+namespace Project1StudentManagment
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -33,7 +35,7 @@
                 student2.Firstname = "Bijay";
                 student2.MiddleName = "Kumar";
                 student2.Lastname = "Mishra";
-                student2.Age = 11;
+                student2.Age = 16;
                 student2.ClassName = ClassList.Five;
                 Subject s3 = new Subject();
                 s3.SubjectName = "English";
@@ -59,7 +61,7 @@
             try
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Welcome to Student Menu.....\nPlease select any option....");
+                Console.WriteLine("\nWelcome to Student Menu.....\nPlease select any option....");
                 Console.WriteLine("1. Add Student to system.\n" +
                                   "2. Get all the students with all the details.\n" +
                                   "3. Filter students by different fields.\n" +
@@ -83,12 +85,16 @@
                         FilterSudents(StudentList);
                         break;
                     case 4:
+                        FindYoung(StudentList);
                         break;
                     case 5:
+                        FindTopper(StudentList);
                         break;
                     case 6:
+                        FindRank(StudentList);
                         break;
                     case 7:
+                        StudentList.DisplayClass();
                         break;
                     default:
                         Console.WriteLine("Please Enter a Valid Option.");
@@ -179,7 +185,7 @@
         {
             try
             {
-                if (student.Hobbies?.Count == null)
+                if (student.Hobbies?.Count == null || student.Hobbies?.Count == 0)
                 {
                     Console.WriteLine("Enter Hobby Name:");
                     var hobby = Console.ReadLine();
@@ -207,185 +213,312 @@
         }
         public static void FilterSudents(List<Student> StudentList)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Please choose the filter option.\n" +
-                              "1. First Name\n" +
-                              "2. Middle Name\n" +
-                              "3. Last Name\n" +
-                              "4. Class\n" +
-                              "5. Subjects\n" +
-                              "6. Address\n" +
-                              "7. Hobbies\n" +
-                              "8. Added Date Time");
-            int option = int.Parse(Console.ReadLine());
-            FilterName fl;
-            switch (option)
+            try
             {
-                case 1:
-                    fl = new FilterName(FilterByFirstName);
-                    fl(StudentList);
-                    break;
-                case 2:
-                    fl = new FilterName(FilterByMiddleName);
-                    fl(StudentList);
-                    break;
-                case 3:
-                    fl = new FilterName(FilterByLastName);
-                    fl(StudentList);
-                    break;
-                case 4:
-                    fl = new FilterName(FilterByClass);
-                    fl(StudentList);
-                    break;
-                case 5:
-                    fl = new FilterName(FilterBySubject);
-                    fl(StudentList);
-                    break;
-                case 6:
-                    fl = new FilterName(FilterByAddress);
-                    fl(StudentList);
-                    break;
-                case 7:
-                    fl = new FilterName(FilterByHobbies);
-                    fl(StudentList);
-                    break;
-                case 8:
-                    fl = new FilterName(FilterByDateTime);
-                    fl(StudentList);
-                    break;
-                default:
-                    Console.WriteLine("Please Enter a Valid Option.");
-                    break;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Please choose the filter option.\n" +
+                                  "1. First Name\n" +
+                                  "2. Middle Name\n" +
+                                  "3. Last Name\n" +
+                                  "4. Class\n" +
+                                  "5. Subjects\n" +
+                                  "6. Address\n" +
+                                  "7. Hobbies\n" +
+                                  "8. Added Date Time");
+                int option = int.Parse(Console.ReadLine());
+                FilterName fl;
+                switch (option)
+                {
+                    case 1:
+                        fl = new FilterName(FilterByFirstName);
+                        fl(StudentList);
+                        break;
+                    case 2:
+                        fl = new FilterName(FilterByMiddleName);
+                        fl(StudentList);
+                        break;
+                    case 3:
+                        fl = new FilterName(FilterByLastName);
+                        fl(StudentList);
+                        break;
+                    case 4:
+                        fl = new FilterName(FilterByClass);
+                        fl(StudentList);
+                        break;
+                    case 5:
+                        fl = new FilterName(FilterBySubject);
+                        fl(StudentList);
+                        break;
+                    case 6:
+                        fl = new FilterName(FilterByAddress);
+                        fl(StudentList);
+                        break;
+                    case 7:
+                        fl = new FilterName(FilterByHobbies);
+                        fl(StudentList);
+                        break;
+                    case 8:
+                        fl = new FilterName(FilterByDateTime);
+                        fl(StudentList);
+                        break;
+                    default:
+                        Console.WriteLine("Please Enter a Valid Option.");
+                        break;
+                }
             }
+            catch (Exception ex) { Console.WriteLine(ex.Message);}
         }
         public static void FilterByFirstName(List<Student> StudentList)
         {
-            Console.WriteLine("Enter First Name:");
-            string fistName = Console.ReadLine();
-            var list = StudentList.FindAll((student)=> student.Firstname == fistName);
-            if (list.Count == 0)
+            try
             {
-                DisplayAllStudent(list);
+                Console.WriteLine("Enter First Name:");
+                string fistName = Console.ReadLine();
+                var list = StudentList.FindAll((student) => student.Firstname == fistName);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch(Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByMiddleName(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Middle Name:");
-            string middleName = Console.ReadLine();
-            var list = StudentList.FindAll((student) => student.MiddleName == middleName);
-            if (list.Count == 0)
+            try
             {
-                DisplayAllStudent(list);
+                Console.WriteLine("Enter Middle Name:");
+                string middleName = Console.ReadLine();
+                var list = StudentList.FindAll((student) => student.MiddleName == middleName);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByLastName(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Last Name:");
-            string lastName = Console.ReadLine();
-            var list = StudentList.FindAll((student) => student.Lastname == lastName);
-            if (list.Count == 0)
+            try
             {
-                DisplayAllStudent(list);
+                Console.WriteLine("Enter Last Name:");
+                string lastName = Console.ReadLine();
+                var list = StudentList.FindAll((student) => student.Lastname == lastName);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByClass(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Class Name(In Number):");
-            int classInput = int.Parse(Console.ReadLine());
-            var list = StudentList.FindAll((student) => student.ClassName == (ClassList)classInput);
-            if (list.Count == 0)
+            try
             {
-                DisplayAllStudent(list);
+                Console.WriteLine("Enter Class Name(In Number):");
+                int classInput = int.Parse(Console.ReadLine());
+                var list = StudentList.FindAll((student) => student.ClassName == (ClassList)classInput);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterBySubject(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Subject:");
-            string subject = Console.ReadLine();
-            List<Student> list = new List<Student>();
-            foreach(var student in StudentList)
+            try
             {
-                var subjectClass = student.Subjects.Find(x => x.SubjectName == subject);
-                if(subjectClass != null)
+                Console.WriteLine("Enter Subject:");
+                string subject = Console.ReadLine();
+                List<Student> list = new List<Student>();
+                foreach (var student in StudentList)
                 {
-                    list.Add(student);
+                    var subjectClass = student.Subjects.Find(x => x.SubjectName == subject);
+                    if (subjectClass != null)
+                    {
+                        list.Add(student);
+                    }
+                }
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
                 }
             }
-            if (list.Count == 0)
-            {
-                DisplayAllStudent(list);
-            }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByAddress(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Address:");
-            string address = Console.ReadLine();
-            var list = StudentList.FindAll((student) => student.Address == address);
-            if (list.Count == 0)
+            try
             {
-                DisplayAllStudent(list);
+                Console.WriteLine("Enter Address:");
+                string address = Console.ReadLine();
+                var list = StudentList.FindAll((student) => student.Address == address);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByHobbies(List<Student> StudentList)
         {
-            Console.WriteLine("Enter Hobby:");
-            string address = Console.ReadLine();
-            List<Student> list = new List<Student>();
-            foreach(var student in StudentList)
+            try
             {
-                var hobby = student.Hobbies.Find(x => x == address);
-                if (hobby != null)
+                Console.WriteLine("Enter Hobby:");
+                string address = Console.ReadLine();
+                List<Student> list = new List<Student>();
+                foreach (var student in StudentList)
                 {
-                    list.Add(student) ;
+                    var hobby = student.Hobbies.Find(x => x == address);
+                    if (hobby != null)
+                    {
+                        list.Add(student);
+                    }
+                }
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
                 }
             }
-            if (list.Count == 0)
-            {
-                DisplayAllStudent(list);
-            }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
         public static void FilterByDateTime(List<Student> StudentList)
         {
-            Console.WriteLine("Enter DateTime:");
-            DateTime dateTime = Convert.ToDateTime(Console.ReadLine());
-            var list = StudentList.FindAll(x => x.AddedDate.CompareTo(dateTime) == 0);
-            if (list.Count == 0)
+            try
             {
+                Console.WriteLine("Enter DateTime:");
+                DateTime dateTime = Convert.ToDateTime(Console.ReadLine());
+                var list = StudentList.FindAll(x => x.AddedDate.CompareTo(dateTime) == 0);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+        }
+        public static void FindYoung(List<Student> StudentList)
+        {
+            try
+            {
+                var list = StudentList.FindAll(x => x.Age >= 15 && x.Age <= 25);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+        }
+        public static void FindTopper(List<Student> StudentList)
+        {
+            try
+            {
+                Student topper = StudentList[0];
+                int intialHigh = 0;
+                foreach (var mark in topper.Subjects)
+                {
+                    intialHigh += mark.MarkObtained;
+                }
+                foreach (var student in StudentList)
+                {
+                    int totalmark = 0;
+                    foreach(var mark in student.Subjects)
+                    {
+                        totalmark += mark.MarkObtained;
+                    }
+                    if (totalmark > intialHigh)
+                    {
+                        topper = student;
+                    }
+                }
+                List<Student> list = new List<Student>() {topper};
                 DisplayAllStudent(list);
             }
-            else
-            {
-                Console.WriteLine("No match found.");
-            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
+        public static void FindRank(List<Student> StudentList)
+        {
+            try
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("Please Enter The RollNo.");
+                int rollNo = int.Parse(Console.ReadLine());
+                List<StudentWithTotalMark> rankList = new List<StudentWithTotalMark>();
+                foreach (var student in StudentList)
+                {
+                    StudentWithTotalMark studentWithTotalMark = new StudentWithTotalMark();
+                    studentWithTotalMark.RollNo = student.RollNo;
+                    int totalmark = 0;
+                    foreach (var mark in student.Subjects)
+                    {
+                        totalmark += mark.MarkObtained;
+                    }
+                    studentWithTotalMark.TotalMark = totalmark;
+                    rankList.Add(studentWithTotalMark);
+                }
+                MarkCompare totalMarksComparer = new MarkCompare();
+                rankList.Sort(totalMarksComparer);
+                int index = rankList.FindIndex(x => x.RollNo == rollNo);
+                if (index == 0)
+                {
+                    Console.WriteLine($"The student with Rollno {rollNo} is the topper or the class.");
+                }
+                else if( index > 0)
+                {
+                    Console.WriteLine($"Result: {index + 1}");
+                }
+                else
+                {
+                    Console.WriteLine($"No student with given roll no.");
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+        }
+        
         delegate void FilterName(List<Student> StudentList);
     }
 }

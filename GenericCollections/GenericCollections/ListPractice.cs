@@ -5,8 +5,18 @@ namespace GenericCollections
 {
     class ListPractice
     {
+        private int a;
+        public int A
+        {
+            get { return a; }
+            private set { a = 10; }
+        }
         public void Example()
         {
+            int z = 10;
+            object z1 = z;
+            z = (int) z1;
+            this.A = 10;
             //List Declarations 
             List<int> listInt = new List<int>(); //Initializes a new instance of the List<T> class that is empty and has the default initial capacity.
             listInt.Add(1);
@@ -63,10 +73,12 @@ namespace GenericCollections
             listInt1.CopyTo(arr, 0);
 
             //Nested List
-            List<List<int>> lists = new List<List<int>>();
+            List<List<int>> lists = new List<List<int>>() { new List<int> { 1, 2, 3 }, new List<int> { 1, 2, 3 } };
             lists.Add(new List<int>() { 1, 2, 3});
             lists.Add(new List<int>() { 3, 4, 5 });
             lists.Add(new List<int>() { 6, 7, 8 });
+
+
 
             foreach(var list in lists)
             {
@@ -87,8 +99,13 @@ namespace GenericCollections
 
             listInt2.ForEach(display);
             listInt2.Remove(1);
-            listInt2.Clear();
+            var a = listInt2.Find(x => x == 1111111);
 
+            var b = listInt2[0];
+            listInt2.RemoveAt(0);
+            var c = listInt2[0];
+            listInt2.Clear();
+            var d = listInt2.Capacity;
             //AsReadOonly 
             ReadOnlyCollection<List<int>> readOnlyList = lists.AsReadOnly();
         }

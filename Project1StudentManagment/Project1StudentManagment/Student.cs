@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Project1StudentManagment
+﻿namespace Project1StudentManagment
 {
     class Student
     {
@@ -19,5 +17,10 @@ namespace Project1StudentManagment
     {
         public string SubjectName { get; set; }
         public int MarkObtained { get; set; }
+    }
+    class StudentWithTotalMark
+    {
+        public int RollNo { get; set; }
+        public int TotalMark { get; set; }
     }
 }
