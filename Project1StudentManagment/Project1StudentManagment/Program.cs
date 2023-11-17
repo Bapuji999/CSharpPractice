@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
 
 namespace Project1StudentManagment
 {
@@ -102,7 +103,7 @@ namespace Project1StudentManagment
                 }
                 start(StudentList);
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void DisplayAllStudent(List<Student> StudentList)
         {
@@ -128,7 +129,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("Added Date: " + student.AddedDate + "\n");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void AddStudent(List<Student> StudentList)
         {
@@ -147,6 +148,9 @@ namespace Project1StudentManagment
                 Console.WriteLine("Enter Age:");
                 student.Age = int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter Class Name(In Number):");
+                Console.ForegroundColor = ConsoleColor.Red;
+                DisplayClass();
+                Console.ForegroundColor = ConsoleColor.Blue;
                 int classInput = int.Parse(Console.ReadLine());
                 student.ClassName = (ClassList)classInput;
                 AddSubject(student);
@@ -156,7 +160,12 @@ namespace Project1StudentManagment
                 student.AddedDate = DateTime.Now;
                 StudentList.Add(student);
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message  ); }
+            finally
+            {
+                Console.ForegroundColor= ConsoleColor.White;
+                Console.WriteLine("Add Student Process End........ \n Going back to main menu.........");
+            }
         }
         public static void AddSubject(Student student)
         {
@@ -179,7 +188,7 @@ namespace Project1StudentManagment
                     return;
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void AddHobbis(Student student)
         {
@@ -209,7 +218,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("A student can have at most 7 hobbies and you have reached the maximum limit.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterSudents(List<Student> StudentList)
         {
@@ -304,7 +313,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterByLastName(List<Student> StudentList)
         {
@@ -323,12 +332,15 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterByClass(List<Student> StudentList)
         {
             try
             {
+                Console.ForegroundColor = ConsoleColor.Red;
+                DisplayClass();
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Enter Class Name(In Number):");
                 int classInput = int.Parse(Console.ReadLine());
                 var list = StudentList.FindAll((student) => student.ClassName == (ClassList)classInput);
@@ -342,7 +354,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterBySubject(List<Student> StudentList)
         {
@@ -369,7 +381,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterByAddress(List<Student> StudentList)
         {
@@ -388,7 +400,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterByHobbies(List<Student> StudentList)
         {
@@ -415,7 +427,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FilterByDateTime(List<Student> StudentList)
         {
@@ -434,7 +446,7 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FindYoung(List<Student> StudentList)
         {
@@ -451,19 +463,26 @@ namespace Project1StudentManagment
                     Console.WriteLine("No match found.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FindTopper(List<Student> StudentList)
         {
             try
             {
-                Student topper = StudentList[0];
+                Console.WriteLine("Enter Class Name(In Number):");
+                Console.ForegroundColor = ConsoleColor.Red;
+                DisplayClass();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                int classInput = int.Parse(Console.ReadLine());
+                ClassList className = (ClassList)classInput;
+                List<Student> StudentInClass = StudentList.FindAll(x => x.ClassName == className);
+                Student topper = StudentInClass[0];
                 int intialHigh = 0;
                 foreach (var mark in topper.Subjects)
                 {
                     intialHigh += mark.MarkObtained;
                 }
-                foreach (var student in StudentList)
+                foreach (var student in StudentInClass)
                 {
                     int totalmark = 0;
                     foreach(var mark in student.Subjects)
@@ -476,19 +495,34 @@ namespace Project1StudentManagment
                     }
                 }
                 List<Student> list = new List<Student>() {topper};
-                DisplayAllStudent(list);
+                if (list.Count > 0)
+                {
+                    DisplayAllStudent(list);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("No match found.");
+                }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
         public static void FindRank(List<Student> StudentList)
         {
             try
             {
+                Console.WriteLine("Enter Class Name(In Number):");
+                Console.ForegroundColor = ConsoleColor.Red;
+                DisplayClass();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                int classInput = int.Parse(Console.ReadLine());
+                ClassList className = (ClassList)classInput;
+                List<Student> StudentInClass = StudentList.FindAll(x => x.ClassName == className);
                 Console.ForegroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine("Please Enter The RollNo.");
                 int rollNo = int.Parse(Console.ReadLine());
                 List<StudentWithTotalMark> rankList = new List<StudentWithTotalMark>();
-                foreach (var student in StudentList)
+                foreach (var student in StudentInClass)
                 {
                     StudentWithTotalMark studentWithTotalMark = new StudentWithTotalMark();
                     studentWithTotalMark.RollNo = student.RollNo;
@@ -516,9 +550,19 @@ namespace Project1StudentManagment
                     Console.WriteLine($"No student with given roll no.");
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
         }
-        
+        public static void DisplayClass()
+        {
+            try 
+            { 
+                foreach (var Class in Enum.GetValues(typeof(ClassList)))
+                {
+                    Console.WriteLine($"{(int)Class}. {Class}");
+                }
+            }
+            catch (Exception ex) { Console.WriteLine("Invalid Input \n" + ex.Message); }
+        }
         delegate void FilterName(List<Student> StudentList);
     }
 }

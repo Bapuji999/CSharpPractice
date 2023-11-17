@@ -24,10 +24,6 @@
                 {
                     return ((int)x).CompareTo((int)y);
                 }
-                else if (x is string && y is string)
-                {
-                    return String.Compare((string)x, (string)y, StringComparison.Ordinal);
-                }
                 else if (x is double && y is double)
                 {
                     return ((double)x).CompareTo((double)y);

@@ -9,11 +9,15 @@ namespace TuplesExample
         {
             Tuple<int, string, bool> myTuple1 = Tuple.Create(1, "Hello", true);
             Tuple<int, string, bool> myTuple2 = new Tuple<int, string, bool>(1, "Hello", true);
-            var myTuple = (1, "Hello", true);
-            var namedTuple = (Id: 1, Name: "John", IsStudent: true);
-            (int Id, string Name, bool IsStudent) namedTuple1 = (1, "John", true);
 
             Tuple<int, string, int, string> touple1 = new Tuple<int, string, int, string>(1,"hi", 2, "He");
+
+            Tuple<int, string> t2 = new Tuple<int, string>(1, "HI");
+
+            var nestedTuple = Tuple.Create("Outer", Tuple.Create("Inner1", 1), Tuple.Create("Inner2", 2));
+
+            Tuple<int, string, bool, Tuple<int, string, int, string>> myTuple3 = 
+                new Tuple<int, string, bool, Tuple<int, string, int, string>>(1, "Hello", true, new Tuple<int, string, int, string>(1, "hi", 2, "He"));
 
             //Accessing Tuple Elements
             Console.WriteLine(touple1);
@@ -34,8 +38,6 @@ namespace TuplesExample
 
             //ValueTuple
             var t1 = (1, "hi", 2, "He");
-            var t2 = (1, "hi");
-            Console.WriteLine(TouplesExample.Ok(t2));
 
             //Deconstruction with Named Tuples
             var person = (Name: "John", Age: 30, IsStudent: false);

@@ -10,8 +10,7 @@ namespace Multi_Threading
             await taskBasedAsynchronousProgramming.Example1();
             Console.WriteLine("Hi");
             Console.WriteLine("Hi");
-
-             Func<Task> ab = async () =>
+            Func<Task> ab = async () =>
             {
                 Console.WriteLine("Async function started.");
                 await taskBasedAsynchronousProgramming.Example1();

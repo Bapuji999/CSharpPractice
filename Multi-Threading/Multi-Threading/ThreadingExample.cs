@@ -4,6 +4,7 @@
     {
         public static void Run()
         {
+            ThreadPool.QueueUserWorkItem(PrintNumbers);
             Thread myThread = new Thread(MyMethod); //State: Created
 
             myThread.Start(); //Start method does not return until the new thread has started running
@@ -17,7 +18,7 @@
             Console.WriteLine("Priority: {0}", currentThread.Priority);
             Console.WriteLine("Culture: {0}", currentThread.CurrentCulture.Name);
             Console.WriteLine("UI Culture: {0}", currentThread.CurrentUICulture.Name);
-            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------");
             myThread.Join();
             // Main thread continues to execute other tasks
             for (int i = 0; i < 5; i++)
@@ -40,6 +41,15 @@
                 Console.WriteLine();
                 Console.WriteLine($"Worker thread: {i}");
                 Thread.Sleep(1000);
+            }
+        }
+        static void PrintNumbers(object state)
+        {
+            // This method represents the work item that will be executed by a thread pool thread
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(i);
+                Thread.Sleep(100);
             }
         }
     }

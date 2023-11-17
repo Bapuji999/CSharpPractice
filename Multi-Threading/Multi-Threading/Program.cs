@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            //ThreadingExample.Run();
+            ThreadingExample.Run();
             TaskBasedAsynchronousProgramming.Example();
         }
     }
