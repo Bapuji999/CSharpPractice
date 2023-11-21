@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\Project1StudentManagment.csproj",
+      "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\Project1StudentManagment.csproj",
       "projectName": "Project1StudentManagment",
-      "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\Project1StudentManagment.csproj",
+      "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\Project1StudentManagment.csproj",
       "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\obj\\",
+      "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Project1StudentManagment\\Project1StudentManagment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",

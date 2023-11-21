@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj": {}
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj": {
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj",
+        "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj",
         "projectName": "TuplesExample",
-        "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj",
+        "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\TuplesExample.csproj",
         "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\obj\\",
+        "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\TuplesExample\\TuplesExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",

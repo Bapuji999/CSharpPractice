@@ -12,3 +12,17 @@ C:\Users\bapuj\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\r
 C:\Users\bapuj\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.pdb
 C:\Users\bapuj\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.genruntimeconfig.cache
 C:\Users\bapuj\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\ref\TuplesExample.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\bin\Debug\net7.0\TuplesExample.exe
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\bin\Debug\net7.0\TuplesExample.deps.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\bin\Debug\net7.0\TuplesExample.runtimeconfig.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\bin\Debug\net7.0\TuplesExample.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\bin\Debug\net7.0\TuplesExample.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.AssemblyInfoInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.AssemblyInfo.cs
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\refint\TuplesExample.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\TuplesExample.genruntimeconfig.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\TuplesExample\TuplesExample\obj\Debug\net7.0\ref\TuplesExample.dll

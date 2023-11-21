@@ -4,6 +4,9 @@
     {
         public static void Run()
         {
+            ThreadPool.QueueUserWorkItem(DoWork, 1);
+            ThreadPool.QueueUserWorkItem(DoWork, 2);
+            ThreadPool.QueueUserWorkItem(DoWork, 3);
             ThreadPool.QueueUserWorkItem(PrintNumbers);
             Thread myThread = new Thread(MyMethod); //State: Created
 
@@ -51,6 +54,11 @@
                 Console.WriteLine(i);
                 Thread.Sleep(100);
             }
+        }
+        static void DoWork(object state)
+        {
+            int taskId = (int)state;
+            Console.WriteLine($"Task {taskId} executed by thread {Thread.CurrentThread.ManagedThreadId}");
         }
     }
 }

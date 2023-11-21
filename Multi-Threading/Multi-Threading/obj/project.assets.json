@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\Multi-Threading.csproj",
+      "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\Multi-Threading.csproj",
       "projectName": "Multi-Threading",
-      "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\Multi-Threading.csproj",
+      "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\Multi-Threading.csproj",
       "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\obj\\",
+      "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\Multi-Threading\\Multi-Threading\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",
