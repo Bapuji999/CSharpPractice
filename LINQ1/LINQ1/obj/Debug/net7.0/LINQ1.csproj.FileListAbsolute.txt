@@ -1,0 +1,14 @@
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\bin\Debug\net7.0\LINQ1.exe
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\bin\Debug\net7.0\LINQ1.deps.json
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\bin\Debug\net7.0\LINQ1.runtimeconfig.json
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\bin\Debug\net7.0\LINQ1.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\bin\Debug\net7.0\LINQ1.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.AssemblyInfoInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.AssemblyInfo.cs
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\refint\LINQ1.dll
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.pdb
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\LINQ1.genruntimeconfig.cache
+C:\Users\bapuj\Desktop\BapujiPrac\LINQ1\LINQ1\obj\Debug\net7.0\ref\LINQ1.dll
