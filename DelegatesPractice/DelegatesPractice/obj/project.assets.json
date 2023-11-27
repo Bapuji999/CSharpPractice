@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\DelegatesPractice.csproj",
+      "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\DelegatesPractice.csproj",
       "projectName": "DelegatesPractice",
-      "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\DelegatesPractice.csproj",
+      "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\DelegatesPractice.csproj",
       "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\obj\\",
+      "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\DelegatesPractice\\DelegatesPractice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
