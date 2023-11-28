@@ -32,18 +32,29 @@
                 new Subject() { Id=1, Name="Math", ClassId=1},
                 new Subject() { Id=2, Name="Chem", ClassId=1},
                 new Subject() { Id=3, Name="Physics", ClassId=2},
-                new Subject() { Id=4, Name="Englisg", ClassId=2},
+                new Subject() { Id=4, Name="Englisg", ClassId=3},
                 new Subject() { Id=5, Name="Hindi", ClassId=3},
-                new Subject() { Id=6, Name="It", ClassId=3}
+                new Subject() { Id=6, Name="It", ClassId=4},
+                new Subject() { Id=7, Name="Saskrit", ClassId=6}
             };
         }
         public static IEnumerable<Class> GetAllClass()
         {
             return new[]
             {
-                new Class() { Id=1, Name="A"},
-                new Class() { Id=2, Name="B"},
-                new Class() { Id=3, Name="C"}
+                new Class() { Id=1, Name="A1", CollegeId = 1},
+                new Class() { Id=2, Name="A2", CollegeId = 1},
+                new Class() { Id=3, Name="B1", CollegeId = 2},
+                new Class() { Id=4, Name="B2", CollegeId = 2},
+                new Class() { Id=5, Name="C1", CollegeId = 2}
+            };
+        }
+        public static IEnumerable<College> GetAllCollege()
+        {
+            return new[]
+            {
+                new College() { Id=1, Name="A"},
+                new College() { Id=2, Name="B"}
             };
         }
     }

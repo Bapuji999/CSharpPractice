@@ -43,8 +43,10 @@ namespace LINQ1
             DifferedExicution.Example();
             Projection.Example();
             SetOperations.Example();
-            Paging.Example();
             Joins.Example();
+            LetAndInto.Example();
+            AggregationOperatorsAndGroupBy.Example();
+            Paging.Example();
         }
     }
 }
