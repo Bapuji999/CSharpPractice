@@ -46,6 +46,7 @@ namespace LINQ1
             Joins.Example();
             LetAndInto.Example();
             AggregationOperatorsAndGroupBy.Example();
+            DynamicQuery.Example();
             Paging.Example();
         }
     }

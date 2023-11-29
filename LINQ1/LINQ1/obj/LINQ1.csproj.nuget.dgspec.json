@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj": {}
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj": {
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj",
+        "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj",
         "projectName": "LINQ1",
-        "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj",
+        "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\LINQ1.csproj",
         "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\obj\\",
+        "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\LINQ1\\LINQ1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "LinqKit.Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.1.5, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.3.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
