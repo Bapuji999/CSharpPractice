@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj": {}
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj": {
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj",
+        "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj",
         "projectName": "EFCore1",
-        "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj",
+        "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\EFCore1.csproj",
         "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\obj\\",
+        "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\EFCore1\\EFCore1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
