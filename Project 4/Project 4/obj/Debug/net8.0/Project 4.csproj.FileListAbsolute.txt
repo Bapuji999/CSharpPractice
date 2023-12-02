@@ -1,0 +1,33 @@
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Project 4.exe
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Project 4.deps.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Project 4.runtimeconfig.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Project 4.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Project 4.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Humanizer.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.csproj.AssemblyReference.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.AssemblyInfoInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.AssemblyInfo.cs
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.sourcelink.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.csproj.CopyComplete
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\refint\Project 4.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\Project 4.genruntimeconfig.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\Project 4\Project 4\obj\Debug\net8.0\ref\Project 4.dll
