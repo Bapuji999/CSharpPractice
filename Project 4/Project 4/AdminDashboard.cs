@@ -1,4 +1,5 @@
-﻿using Project_4.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Project_4.Models;
 using System.Text;
 
 namespace Project_4
@@ -52,18 +53,23 @@ namespace Project_4
                         break;
                     case 5:
                         rentVehicle(_contex);
+                        AdminDashboardPage();
                         break;
                     case 6:
-                        Console.WriteLine();
+                        listVehicleRented(_contex);
+                        AdminDashboardPage();
                         break;
                     case 7:
-                        Console.WriteLine();
+                        returnVehicle(_contex);
+                        AdminDashboardPage();
                         break;
                     case 8:
-                        Console.WriteLine();
+                        showPaymentDetails(_contex);
+                        AdminDashboardPage();
                         break;
                     default:
-                        Console.WriteLine();
+                        Console.WriteLine("Invalid option please try again.");
+                        AdminDashboardPage();
                         break;
                 }
             }
@@ -250,6 +256,123 @@ namespace Project_4
             {
                 Console.WriteLine(ex.Message, ex.InnerException?.Message);
             }
+        }
+        static void listVehicleRented(Contex _contex)
+        {
+            try
+            {
+                var vehiclesRented = _contex.VehicleIssue
+                                            .Include(vi => vi.vehicle)
+                                            .Include(vi => vi.User)
+                                            .Where(vi => vi.ReturnDate == null);
+                int index = 1;
+                Console.WriteLine("Vehicle Rented List:\n");
+                foreach (var vehicleRented in vehiclesRented)
+                {
+                    User? user = vehicleRented.User;
+                    Vehicle? vehicle = vehicleRented.vehicle;
+                    Console.WriteLine($"{index}. IssueId: {vehicleRented.VehicleIssueId}, VehicleName: {vehicle?.VehicleName}, VehicleNumber: {vehicle?.VehicleNo}, User: {user?.UserName}");
+                }
+                Console.WriteLine();
+            }
+            catch (Exception ex )
+            {
+                Console.WriteLine(ex.Message, ex.InnerException?.Message);
+            }
+        }
+        static void returnVehicle(Contex _contex)
+        {
+            try
+            {
+                Console.WriteLine("Please Enter UserId: ");
+                int userId;
+                int.TryParse(Console.ReadLine(), out  userId);
+                Console.WriteLine("Please Enter VehicleId: ");
+                int vehicleId;
+                int.TryParse(Console.ReadLine(), out vehicleId);
+                var vehicleIssue = _contex.VehicleIssue
+                                          .Include(vi => vi.vehicle)
+                                          .Include(vi => vi.PaymentDetails)
+                                          .Where(vi => vi.VehicleId == vehicleId && vi.UserId == userId)
+                                          .FirstOrDefault();
+                vehicleIssue.ReturnDate = DateTime.Now;
+                if(vehicleIssue.ReturnDate < vehicleIssue.DueDate)
+                {
+                    Console.WriteLine("Vehicle not reliesed till now.");
+                    return;
+                }
+                int? totalDays = (vehicleIssue.ReturnDate - vehicleIssue.DeliveryDate)?.Days;
+                int? extaDays = vehicleIssue.DueDate < vehicleIssue.ReturnDate ? (vehicleIssue.ReturnDate - vehicleIssue.DueDate)?.Days : 0;
+                double? totalPayment = (totalDays * vehicleIssue?.vehicle?.PerDayPrice) + (extaDays * 500) - vehicleIssue.PaymentDetails.TotalPayment;
+                Console.WriteLine($"Please pay {totalPayment}");
+                double payAmount;
+                double.TryParse(Console.ReadLine(), out payAmount);
+                double? total = totalPayment;
+                while (total != 0)
+                {
+                    if (payAmount < total)
+                    {
+                        total = total - payAmount;
+                        Console.WriteLine($"Please pay remaining {total}");
+                        double.TryParse(Console.ReadLine(), out payAmount);
+                    }
+                    if (payAmount > total)
+                    {
+                        var change = payAmount - total;
+                        total = 0;
+                        Console.WriteLine($"Please take change {change}");
+                    }
+                    else
+                    {
+                        total = 0;
+                    }
+                }
+                vehicleIssue.PaymentDetails.TotalPayment = (double)totalPayment;
+                vehicleIssue.PaymentDetails.IsFullPaymentDone = true;
+                vehicleIssue.vehicle.isAvailable = true;
+                _contex.Update(vehicleIssue);
+                _contex.SaveChanges();
+                Console.WriteLine("Return Sucessfull");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message, ex.InnerException?.Message);
+            }
+        }
+        static void showPaymentDetails(Contex _contex)
+        {
+            Console.WriteLine("Please Enter UserId: ");
+            int userId;
+            int.TryParse(Console.ReadLine(), out userId);
+            Console.WriteLine("Please Enter VehicleId: ");
+            int vehicleId;
+            int.TryParse(Console.ReadLine(), out vehicleId);
+            var vehicleIssueDetails = _contex.VehicleIssue
+                                             .Include(vi => vi.PaymentDetails)
+                                             .Where(vi => vi.UserId == userId && vi.VehicleId == vehicleId);
+            if (!vehicleIssueDetails.Any())
+            {
+                Console.WriteLine("No Payment details is there for specified input.");
+                return;
+            }
+            Console.WriteLine("Please select the issueDate.");
+            foreach( var vehicle in vehicleIssueDetails )
+            {
+                Console.WriteLine($"{vehicle.VehicleIssueId}. {vehicle.IssueDate}");
+            }
+            int selected;
+            int.TryParse(Console.ReadLine(), out selected);
+            while(!vehicleIssueDetails.Any(vi => vi.VehicleIssueId == selected))
+            {
+                Console.WriteLine("Please select from the above options.");
+                int.TryParse(Console.ReadLine(), out selected);
+            }
+            var vehicleIssueDetail = vehicleIssueDetails.Where(vi => vi.VehicleIssueId == selected).FirstOrDefault();
+            var paymentDetails = vehicleIssueDetail.PaymentDetails;
+            int? extaDays = vehicleIssueDetail.DueDate < vehicleIssueDetail.ReturnDate ? (vehicleIssueDetail.ReturnDate - vehicleIssueDetail.DueDate)?.Days : 0;
+            var totalFine = extaDays * 500;
+            var totalRent = vehicleIssueDetail.ReturnDate == null ? paymentDetails.TotalRent : paymentDetails.TotalPayment - totalFine;
+            Console.WriteLine($"Total Payment: {paymentDetails.TotalPayment}, Total Rent: {totalRent}, Total Fine: {totalFine}");                                        
         }
         static void listAvailableVehicle(Contex _contex)
         {
