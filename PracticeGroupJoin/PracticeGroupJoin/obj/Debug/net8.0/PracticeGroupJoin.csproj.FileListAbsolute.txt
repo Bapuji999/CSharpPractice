@@ -1,0 +1,15 @@
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\bin\Debug\net8.0\PracticeGroupJoin.exe
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\bin\Debug\net8.0\PracticeGroupJoin.deps.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\bin\Debug\net8.0\PracticeGroupJoin.runtimeconfig.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\bin\Debug\net8.0\PracticeGroupJoin.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\bin\Debug\net8.0\PracticeGroupJoin.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.AssemblyInfoInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.AssemblyInfo.cs
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.csproj.CoreCompileInputs.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.sourcelink.json
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\refint\PracticeGroupJoin.dll
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.pdb
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\PracticeGroupJoin.genruntimeconfig.cache
+C:\Users\bapuj\OneDrive\Desktop\BapujiPrac\PracticeGroupJoin\PracticeGroupJoin\obj\Debug\net8.0\ref\PracticeGroupJoin.dll

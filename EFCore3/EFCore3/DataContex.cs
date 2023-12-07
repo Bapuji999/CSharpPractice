@@ -20,8 +20,8 @@ namespace EFCore3
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql("server=127.0.0.1;database=LinqPracticeWithProject2;User=root;Password=Bapuji@999;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.31-mariadb"))
-                  //.EnableSensitiveDataLogging()
-                  //.LogTo(Console.WriteLine, LogLevel.Information)
+                  .EnableSensitiveDataLogging()
+                  .LogTo(Console.WriteLine, LogLevel.Information)
                   ;
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
