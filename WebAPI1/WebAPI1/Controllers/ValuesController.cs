@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using WebAPI1.Examples;
 
 namespace WebAPI1.Controllers
@@ -22,9 +21,9 @@ namespace WebAPI1.Controllers
 
         [HttpGet]
         [Route("/GetProof")]
-        public string GetProof()
+        public IActionResult GetProof()
         {
-            return $"Single: {single.GetCallNo()}, Scope: {scope.GetCallNo()}, Trans: {trans.GetCallNo()} : " + proof.GetProof();
+            return StatusCode(601, $"Single: {single.GetCallNo()}, Scope: {scope.GetCallNo()}, Trans: {trans.GetCallNo()} : " + proof.GetProof());
         }
     }
 }

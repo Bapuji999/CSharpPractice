@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj": {}
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj": {
+    "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj",
+        "projectUniqueName": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj",
         "projectName": "ExcelCryptoGraphy",
-        "projectPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj",
+        "projectPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\ExcelCryptoGraphy.csproj",
         "packagesPath": "C:\\Users\\bapuj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bapuj\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\obj\\",
+        "outputPath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\ExcelCryptoGraphy\\ExcelCryptoGraphy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bapuj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

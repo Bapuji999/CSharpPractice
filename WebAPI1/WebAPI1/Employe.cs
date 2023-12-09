@@ -32,6 +32,20 @@
             return incrementedValue;
         }
     }
+    public class Single1 : ISingle
+    {
+        private static int instanceCount = 0;
+        private int incrementedValue;
+        public int IncrementedValue => incrementedValue;
+        public Single1()
+        {
+            incrementedValue = ++instanceCount + 1;
+        }
+        public int GetCallNo()
+        {
+            return incrementedValue;
+        }
+    }
     public class Scope : IScope
     {
         private static int instanceCount = 0;
