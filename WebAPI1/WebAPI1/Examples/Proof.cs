@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace WebAPI1.Examples
 {
@@ -20,6 +21,11 @@ namespace WebAPI1.Examples
         public string GetProof()
         {
             return $"Single: {single.GetCallNo()}, Scope: {scope.GetCallNo()}, Trans: {trans.GetCallNo()}";
+        }
+        public void ConfigureServices()
+        {
+            IServiceCollection services = new ServiceCollection();
+            services.Replace(new ServiceDescriptor(typeof(ISingle), typeof(ITrans), ServiceLifetime.Singleton));
         }
     }
 }

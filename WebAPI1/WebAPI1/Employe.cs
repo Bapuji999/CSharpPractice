@@ -5,7 +5,6 @@
         public string Name { get; set; }
         public string Email { get; set; }
     }
-
     public interface ITrans
     {
         public int GetCallNo();

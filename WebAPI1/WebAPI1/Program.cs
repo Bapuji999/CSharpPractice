@@ -1,6 +1,8 @@
 
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using WebAPI1.Controllers;
 using WebAPI1.Examples;
+using WebAPI1.Models;
 
 namespace WebAPI1
 {
@@ -16,7 +18,7 @@ namespace WebAPI1
             builder.Services.AddTransient<ITrans, Trans>();
             builder.Services.AddScoped<IScope, Scope>();
             builder.Services.AddScoped<IProof, Proof>();
-            // Add services to the container.
+            builder.Services.AddSingleton<IStudents, Students>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
