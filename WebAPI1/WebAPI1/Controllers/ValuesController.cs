@@ -21,7 +21,7 @@ namespace WebAPI1.Controllers
         }
 
         [HttpGet]
-        [Route("/GetProof")]
+        [Route("GetProof")]
         public IActionResult GetProof()
         {
             return StatusCode(601, $"Single: {single.GetCallNo()}, Scope: {scope.GetCallNo()}, Trans: {trans.GetCallNo()} : " + proof.GetProof());

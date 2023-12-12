@@ -7,6 +7,7 @@ namespace WebAPI1.Controllers
     [Route("api/[controller]")]
     public class TestAllController : ControllerBase
     {
+        
         private readonly IStudents _st;
         public TestAllController(IStudents st)
         {
@@ -31,8 +32,9 @@ namespace WebAPI1.Controllers
                 return NotFound("No students found");
             }
         }
-        [HttpGet]
-        [Route("GetStudent")]
+        //[HttpGet("GetStudent/{Id}")]
+        //[HttpGet("GetStudent/{Id:int}")]
+        [HttpGet(nameof(GetStudent) + "/{Id}")]
         public IActionResult GetStudent(int Id)
         {
             var student = _st.students.FirstOrDefault(x => x.Id == Id);
@@ -106,6 +108,13 @@ namespace WebAPI1.Controllers
                 return NotFound($"Student with ID {id} not found");
             }
             Response.Headers.Add("class", student.Class.ToString("R"));
+            return Ok();
+        }
+        [HttpOptions]
+        [Route("Options")]
+        public IActionResult Options()
+        {
+            HttpContext.Response.Headers.Add("Allow", "GET, POST, PUT, DELETE, OPTIONS");
             return Ok();
         }
     }
