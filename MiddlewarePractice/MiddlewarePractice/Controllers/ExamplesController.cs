@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using MiddlewarePractice.Filters;
-using System.Net.Http;
 
 namespace MiddlewarePractice.Controllers
 {
@@ -10,14 +9,13 @@ namespace MiddlewarePractice.Controllers
     public class ExamplesController : ControllerBase
     {
         private readonly HttpClient _httpClient;
-
         public ExamplesController()
         {
             _httpClient = new HttpClient();
         }
         [HttpGet]
         [Route("ExampleActionFilter")]
-        [ExampleActionFilter(Order = 1)]
+        [ExampleActionFilter]
         public IActionResult ActionResult(string newContent = "")
         {
             return Ok(newContent + "\nWelcome");
