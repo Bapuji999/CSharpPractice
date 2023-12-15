@@ -34,7 +34,7 @@ namespace WebAPI1.Controllers
         }
         [HttpGet("GetStudent")]
         //[HttpGet("GetStudent/{Id:int}")]
-        ///[HttpGet(nameof(GetStudent) + "/{Id}")]
+        [HttpGet(nameof(GetStudent) + "/{Id}")]
         public IActionResult GetStudent(int Id)
         {
             var student = _st.students.FirstOrDefault(x => x.Id == Id);
