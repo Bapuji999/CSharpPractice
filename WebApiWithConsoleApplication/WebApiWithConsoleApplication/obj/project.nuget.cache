@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7REfkBANkxwdms/ShA28/KUFVmc0ImL/5V9vO+bj9nDMuhQXUBPg4EfsAs5XqoUHrRy1kzrHaaaAAsPnw8kRZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bapuj\\OneDrive\\Desktop\\BapujiPrac\\WebApiWithConsoleApplication\\WebApiWithConsoleApplication\\WebApiWithConsoleApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bapuj\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

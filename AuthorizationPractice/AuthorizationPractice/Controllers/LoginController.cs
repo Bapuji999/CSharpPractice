@@ -19,7 +19,7 @@ namespace AuthorizationPractice.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Login([FromBody] UserLogin userLogin)
+        public IActionResult Login(UserLogin userLogin)
         {
             var user = Authenticate(userLogin);
 
