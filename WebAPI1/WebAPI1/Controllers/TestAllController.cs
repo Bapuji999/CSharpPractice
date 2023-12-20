@@ -25,7 +25,7 @@ namespace WebAPI1.Controllers
         {
             if (_st.students.Any())
             {
-                return Ok(_st.students);
+               return _st.students;
             }
             else
             {

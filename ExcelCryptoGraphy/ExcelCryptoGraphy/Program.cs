@@ -1,4 +1,5 @@
 ﻿using OfficeOpenXml;
+using System.Security.AccessControl;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -8,8 +9,39 @@ namespace ExcelCryptoGraphy
     {
         static void Main(string[] args)
         {
-            string filePath = "C:\\Users\\bapuj\\Downloads\\demo01.xlsx";
-            DecryptAndStore(filePath);
+            //string filePath = "C:\\Users\\bapuj\\Downloads\\demo01.xlsx";
+            //DecryptAndStore(filePath);
+
+            string str = "5AP7M";
+            int L = 3;
+            int R = 4;
+            int k = 1;
+            string strLeft = str.Substring(0,L);
+            string strRight = "";
+            if (str.Length > R )
+            {
+                strRight = str.Substring(R + 1);
+            }
+            string encrypted = "";
+            var mask = GenerateRandomSymbol(k); 
+            for(int i = L; i <= R; i++)
+            {
+                encrypted += mask;
+            }
+            Console.WriteLine(strLeft+encrypted+strRight);
+        }
+        static string GenerateRandomSymbol(int k)
+        {
+            string symbols = "!@#$%^&*()-=_+[]{}|;:'\",.<>?/";
+            Random random = new Random();
+            int index = random.Next(0, symbols.Length);
+            string symbol = "";
+            while (k > 0)
+            {
+                symbol=symbol + symbols[index];
+                k--;
+            }
+            return symbol;
         }
         static void DecryptAndStore(string filePath)
         {

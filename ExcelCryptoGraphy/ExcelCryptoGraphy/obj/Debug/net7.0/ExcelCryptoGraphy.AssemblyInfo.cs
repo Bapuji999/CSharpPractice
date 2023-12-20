@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExcelCryptoGraphy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69ef6711c0ad87c2b77a843cac4ee953e7414c3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExcelCryptoGraphy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExcelCryptoGraphy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
