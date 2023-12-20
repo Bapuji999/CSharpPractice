@@ -21,5 +21,6 @@ namespace Project5.Models
         [Required]
         public bool IsActive { get; set; } = true; 
         public ICollection<Product> Products { get; set; }
+        public ICollection<CustomerIntrest> CustomerIntrests { get; set; }
     }
 }

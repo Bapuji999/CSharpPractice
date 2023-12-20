@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Numerics;
 
 namespace Project5.Models
 {
@@ -14,6 +13,7 @@ namespace Project5.Models
         [Required]
         public double Price { get; set; }
         public string ImagePath { get; set; }
+        public double Rating { get; set; }
         public int VendorId { get; set; }
         [ForeignKey(nameof(VendorId))]
         public User Vendor { get; set; }
@@ -21,5 +21,6 @@ namespace Project5.Models
 
         [ForeignKey(nameof(CategoryId))]
         public Category Category { get; set; }
+        public ICollection<CustomerIntrest> CustomerIntrests { get; set; }
     }
 }

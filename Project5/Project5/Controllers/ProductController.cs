@@ -17,7 +17,7 @@ namespace Project5.Controllers
         }
         [Authorize(Roles = "Vendor")]
         [HttpPost("AddProduct")]
-        public async Task<IActionResult> AddProduct(string productName, double price, int categoryId,[FromForm] IFormFile image)
+        public async Task<IActionResult> AddProduct(string productName, double price, double rating, int categoryId,[FromForm] IFormFile image)
         {
             try
             {
@@ -28,6 +28,7 @@ namespace Project5.Controllers
                 Product product = new Product();
                 product.ProductName = productName;
                 product.Price = price;
+                product.Rating = rating;
                 product.CategoryId = categoryId;
                 product.VendorId = GetCurrentUserId();
                 string imagePath = await ProcessImageFile(image);
@@ -61,6 +62,7 @@ namespace Project5.Controllers
                                                                 product.product.ProductId,
                                                                 product.product.ProductName,
                                                                 product.product.Price,
+                                                                product.product.Rating,
                                                                 product.product.ImagePath,
                                                                 product.product.CategoryId,
                                                                 product.CategoryName,
@@ -77,18 +79,55 @@ namespace Project5.Controllers
                 return BadRequest(ex);
             }
         }
-
+        [Authorize]
+        [HttpGet("GetProductsById")]
+        public IActionResult GetProductsById(int Id)
+        {
+            try
+            {
+                if (_dbContext.Products.Any())
+                {
+                    var products = _dbContext.Products.Where(x => x.ProductId == Id)
+                                                      .Join(_dbContext.Categories,
+                                                        product => product.CategoryId,
+                                                        category => category.CategoryId,
+                                                        (product, category) => new { product, category.CategoryName })
+                                                      .Join(_dbContext.Users.Where(x => x.IsActive),
+                                                            product => product.product.VendorId,
+                                                            user => user.UserId,
+                                                            (product, user) =>
+                                                            new {
+                                                                product.product.ProductId,
+                                                                product.product.ProductName,
+                                                                product.product.Price,
+                                                                product.product.Rating,
+                                                                product.product.ImagePath,
+                                                                product.product.CategoryId,
+                                                                product.CategoryName,
+                                                                product.product.VendorId,
+                                                                VendorName = user.UserName
+                                                            }
+                                                        );
+                    return Ok(products);
+                }
+                return BadRequest("No products.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
         [Authorize]
         [HttpGet("GetProductsByCategoryId")]
         public IActionResult GetProductsByCategoryId(int categoryId)
         {
             try
             {
-                if(!_dbContext.Categories.Where(x => x.CategoryId == categoryId).Any())
+                if(!_dbContext.Categories.Any(x => x.CategoryId == categoryId))
                 {
                     return BadRequest("No Category Exist.");
                 }
-                if(!_dbContext.Products.Where(x => x.CategoryId == categoryId).Any())
+                if(!_dbContext.Products.Any(x => x.CategoryId == categoryId))
                 {
                     return BadRequest("No Product Found.");
                 }
@@ -104,6 +143,7 @@ namespace Project5.Controllers
                                                                 product.product.ProductId,
                                                                 product.product.ProductName,
                                                                 product.product.Price,
+                                                                product.product.Rating,
                                                                 product.product.ImagePath,
                                                                 product.product.CategoryId,
                                                                 product.CategoryName,
@@ -120,13 +160,13 @@ namespace Project5.Controllers
         }
 
         [Authorize(Roles = "Vendor")]
-        [HttpGet("GetProductsByVendor")]
-        public IActionResult GetProductsByVendor()
+        [HttpGet("GetProductsOfVendor")]
+        public IActionResult GetProductsOfVendor()
         {
             try
             {
                 int userId = GetCurrentUserId();
-                if (!_dbContext.Products.Where(x => x.VendorId == userId).Any())
+                if (!_dbContext.Products.Any(x => x.VendorId == userId))
                 {
                     return BadRequest("No Product Found.");
                 }
@@ -142,6 +182,7 @@ namespace Project5.Controllers
                                                                 product.product.ProductId,
                                                                 product.product.ProductName,
                                                                 product.product.Price,
+                                                                product.product.Rating,
                                                                 product.product.ImagePath,
                                                                 product.product.CategoryId,
                                                                 product.CategoryName,

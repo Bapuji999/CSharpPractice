@@ -9,6 +9,7 @@ namespace Project5.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<UserRoll> UserRolls { get; set; }
+        public DbSet<CustomerIntrest> CustomerIntrests { get; set; }
         public DataContex(DbContextOptions<DataContex> options) : base(options)
         {
         }
@@ -22,6 +23,16 @@ namespace Project5.Data
                 .HasMany(u => u.Products)
                 .WithOne(p => p.Vendor)
                 .HasForeignKey(p => p.VendorId);
+            modelBuilder.Entity<CustomerIntrest>()
+                .HasKey(ci => new {ci.CustomerId, ci.ProductId});
+            modelBuilder.Entity<CustomerIntrest>()
+                .HasOne(ci => ci.Customer)
+                .WithMany(u => u.CustomerIntrests)
+                .HasForeignKey(ci => ci.CustomerId);
+            modelBuilder.Entity<CustomerIntrest>()
+                .HasOne(ci => ci.Product)
+                .WithMany(p => p.CustomerIntrests)
+                .HasForeignKey(ci => ci.ProductId);
             modelBuilder.Entity<UserRoll>().HasData(
                     new UserRoll { RollId=1, RollType="Admin" },
                     new UserRoll { RollId = 2, RollType = "Vendor" },
