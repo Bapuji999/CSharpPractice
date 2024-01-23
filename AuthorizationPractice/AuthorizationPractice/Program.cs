@@ -18,6 +18,15 @@ namespace AuthorizationPractice
             var Issuer = builder.Configuration.GetSection("Jwt").GetSection("Issuer");
             var Audience = builder.Configuration.GetSection("Jwt").GetSection("Audience");
             var Key = builder.Configuration.GetSection("Jwt").GetSection("Key");
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyOrigin", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -38,6 +47,7 @@ namespace AuthorizationPractice
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowAnyOrigin");
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
